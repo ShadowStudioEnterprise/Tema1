@@ -32,7 +32,7 @@ echo "Path: ".parse_url($url, PHP_URL_PATH);
 echo "<br>";
 echo "Args:".parse_url($url, PHP_URL_QUERY);
 echo "<br>";
-?>
+
 ?>
 
 </body>
