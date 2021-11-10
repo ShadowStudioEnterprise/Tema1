@@ -1,11 +1,13 @@
 <?php
- $u_agent = $_SERVER['HTTP_USER_AGENT'];
-if(preg_match('/Firefox/i',$u_agent))
-    echo "Hola";
-else
-   echo "Cambia a mozilla";
+//Get array
+$productos = ["1" => "Producto 1", "2" => "Producto 2", "3" => "Producto 3"];
+$n = $_GET["id"]??"1";
+if(!array_key_exists($n,$array)){
+  http_response_code(404);
+}
 
-?>
+ ?>
+
 
 <!doctype html>
 
